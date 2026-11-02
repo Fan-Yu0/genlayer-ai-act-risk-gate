@@ -31,7 +31,14 @@
 ## Portal form
 
 - `portal-form-top.png` — Intelligent Contracts category and weekly quota (0/2 used).
-- `portal-form-filled.png` — filled evidence list, reCAPTCHA, and submit button.
-- The form was prepared with the GitHub repository, contract Explorer, deployment
-  transaction, `register_system` transaction, and `assess` transaction.
+- `portal-form-description.png` — title and the 996/1000 description with the
+  source repository URL.
+- `portal-form-middle.png` — contract Explorer and transaction evidence.
+- `portal-form-filled.png` — final evidence cards, reCAPTCHA, and submit button.
+- Evidence list: raw README URL (`Other`), contract Explorer
+  (`GenLayer Explorer Contract`), deployment tx, `register_system` tx, and
+  `assess` tx.
+- The source repository URL is in the description because the portal client
+  redacts `github.com/...` values in evidence inputs; the raw README URL is
+  included as supporting GitHub evidence.
 - Final reCAPTCHA and `提交贡献` remain with the user.
