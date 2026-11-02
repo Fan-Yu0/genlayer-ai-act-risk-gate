@@ -28,29 +28,43 @@ registries, procurement, and DAOs.
 
 - Public source repository:
   https://github.com/Fan-Yu0/genlayer-ai-act-risk-gate
-- Contract: TBD
-- Contract Explorer: TBD
-- Deployment transaction: TBD
-- Deployment Explorer: TBD
-- Successful assessment transaction: TBD
-- Assessment Explorer: TBD
-- Recorded decision: TBD
+- Contract: `0x3f8B4C5cBEA84Ebb90687F497bb1130D1815EeEf`
+- Contract Explorer:
+  https://explorer-studio.genlayer.com/address/0x3f8B4C5cBEA84Ebb90687F497bb1130D1815EeEf
+- Deployment transaction:
+  `0x8f3cfc91f5bc88670d16cbb2f9bdfcf4958e147d9e1af3e12e16d2aa077ce233`
+- Deployment Explorer:
+  https://explorer-studio.genlayer.com/tx/0x8f3cfc91f5bc88670d16cbb2f9bdfcf4958e147d9e1af3e12e16d2aa077ce233
+- System registration transaction:
+  `0xe5097eb14d8519a41199d62495c05da1499c907476ca8c39189d90d0b602c6c4`
+- Registration Explorer:
+  https://explorer-studio.genlayer.com/tx/0xe5097eb14d8519a41199d62495c05da1499c907476ca8c39189d90d0b602c6c4
+- Successful assessment transaction:
+  `0xac18a4c61b430d5b58a814d4584ccc26acadc34bcebb087a6f588761ea0b3be7`
+- Assessment Explorer:
+  https://explorer-studio.genlayer.com/tx/0xac18a4c61b430d5b58a814d4584ccc26acadc34bcebb087a6f588761ea0b3be7
+- Recorded decision: `DISCLOSURE_REQUIRED` (`decision = 2`), risk tier
+  `limited` (`risk_tier = 2`), `transparency_required = true`,
+  `source_consistency = consistent`, round `1`.
+- Live system: `gemma-2-9b-it`
+- System documentation: https://huggingface.co/google/gemma-2-9b-it
+- Deployment documentation: https://arxiv.org/html/2408.00118
 
 ## First live example
 
 Use these values in the deployed Studio contract:
 
 ```text
-system_id: acme-support-agent
-system_url: https://docs.example.com/acme-support-agent
-deployment_url: https://deploy.example.com/acme-support-agent/terms
+system_id: gemma-2-9b-it
+system_url: https://huggingface.co/google/gemma-2-9b-it
+deployment_url: https://arxiv.org/html/2408.00118
 role: 1
 ```
 
-Then call `assess("acme-support-agent")`.
+Then call `assess("gemma-2-9b-it")`.
 
-Replace the placeholder URLs with two real official documentation pages before
-the live call.
+The live call returned `DISCLOSURE_REQUIRED` with risk tier `limited`,
+`transparency_required = true`, and the limited-risk obligation set.
 
 ## Submission notes
 
