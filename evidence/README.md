@@ -27,3 +27,12 @@
 - `studio-assessment.png` — GenLayer Studio after the finalized `assess`
   transaction, showing the deployed contract, transaction log, and accepted
   `get_assessment` response.
+
+## Portal form
+
+- `portal-form-top.png` — Intelligent Contracts category and weekly quota (0/2 used).
+- `portal-form-filled.png` — filled evidence list, reCAPTCHA, and submit button.
+- The form was prepared with the GitHub repository, contract Explorer, deployment
+  transaction, `register_system` transaction, and `assess` transaction.
+- Final reCAPTCHA and `提交贡献` remain with the user.
+
