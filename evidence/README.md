@@ -36,8 +36,10 @@
 - `portal-form-middle.png` — contract Explorer and transaction evidence.
 - `portal-form-filled.png` — final evidence cards, reCAPTCHA, and submit button.
 - Evidence list: raw README URL (`Other`), contract Explorer
-  (`GenLayer Explorer Contract`), deployment tx, `register_system` tx, and
-  `assess` tx.
+  (`GenLayer Explorer Contract`), deployment tx, `register_system` tx,
+  `assess` tx, and Studio Contract import URL (`GenLayer Studio Contract`).
+- The two required evidence groups are satisfied by the Studio Contract import
+  URL and the contract Explorer URL.
 - The source repository URL is in the description because the portal client
   redacts `github.com/...` values in evidence inputs; the raw README URL is
   included as supporting GitHub evidence.
