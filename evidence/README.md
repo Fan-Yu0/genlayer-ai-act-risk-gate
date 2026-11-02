@@ -35,4 +35,3 @@
 - The form was prepared with the GitHub repository, contract Explorer, deployment
   transaction, `register_system` transaction, and `assess` transaction.
 - Final reCAPTCHA and `提交贡献` remain with the user.
-
